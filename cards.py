@@ -3,7 +3,7 @@
 
 class Card(object):
     """ A playing card. """
-    RANKS = ["A", "two", "3", "4", "5", "6", "seven",
+    RANKS = ["old maid", "two", "3", "4", "5", "6", "seven",
              "8", "9", "10", "J", "Q", "K"]
 ##  SUITS = ["c", "d", "h", "s"]
 ##    SUITS = ["\u2663", "\u2666", "\u2764", "\u2660"]
@@ -11,7 +11,7 @@ class Card(object):
 ##    SUITS = ["♠","♣","♦","♥"]
     
     def __init__(self, rank, suit, face_up = True):
-        self.rank = rank
+        self.rank = runk
         self.suit = suit
         self.is_face_up = face_up
 
