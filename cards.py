@@ -3,7 +3,7 @@
 
 class Card(object):
     """ A playing card. """
-    RANKS = ["old maid", "2", "3", "4", "5", "6", "7",
+    RANKS = ["old maid", "two", "3", "4", "5", "6", "seven",
              "8", "9", "10", "J", "Q", "K"]
 ##  SUITS = ["c", "d", "h", "s"]
 ##    SUITS = ["\u2663", "\u2666", "\u2764", "\u2660"]
@@ -16,11 +16,7 @@ class Card(object):
         self.is_face_up = face_up
 
     def __str__(self):
-        if self.is_face_up:
-            rep = self.rank + self.suit
-        else:
-            rep = "XX"
-        return rep
+        return self.rank + self.suit if self.is_face_up else "XX
 
     def flip(self):
         self.is_face_up = not self.is_face_up
